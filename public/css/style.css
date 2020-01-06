@@ -1,7 +1,10 @@
 
+
+
 body{
   margin: 0;
 }
+
 #UpperDiv{
   width: 100%;
   height: 254px;
@@ -17,13 +20,13 @@ body{
 #BottomDiv{
   width: 100%;
   height: 400px; 
-}
+ }
+
 #bottomleft{
   width: 32%;
   height: 400px;
   margin-left: 18%;
   margin-top: 10%;
-  /* background-color: blueviolet; */
 }
 #bottomright{
   width: 32%;
@@ -32,7 +35,6 @@ body{
   margin-right: 16%;
   position: relative;
   bottom: 100%;
-  /* background-color: aqua; */
 }
 
 #middlediv2{
@@ -50,8 +52,8 @@ body{
   color: white;
   margin-right: 31%;
   padding-top: 1%;
-
 }
+
 #Showbalance{
   width: 30%;
   height: 50px;
@@ -183,19 +185,20 @@ div #showPrecent1 div{
 #income{
   color: rgb(51, 169, 164);
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 9%;
+  margin-bottom: 4%;
+  border-bottom: 1px solid rgb(189, 189, 189);
 }
 #outcome{
   color:rgb(249, 53, 58);
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 0;
-  margin-bottom: 9%;
+  margin-bottom: 4%;
+  border-bottom: 1px solid rgb(189, 189, 189);
 }
 
 .spanDescription{
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 38px;
-  margin-right: 192px;
+  margin-right: auto;
 }
 .spanAmount{
   margin-right: 5%;
@@ -217,7 +220,7 @@ div #showPrecent1 div{
   font-size: 22px;
   line-height: 20px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .closebtn:hover {
@@ -227,23 +230,19 @@ div #showPrecent1 div{
 
 .fa-times-circle{
   opacity: 0;
-  transition: all 0.8s;
+  transition: all 0.5s;
 }
 
 p:hover .fa-times-circle{
   opacity: 1; 
   position: relative;
+  margin-left: 10px;
   right: 10px;
 }
 
-/* p:hover .spanDescription{
-  position: relative; 
-  right: 5%;
-}  */
-
 p:hover .spanAmount{
   position: relative; 
-  right: 5%;
+  right: 2%;
 } 
 p:hover .showPrec{
   position: relative; 
@@ -253,7 +252,7 @@ p:hover .showPrec{
 .showPrec{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 80%;
-  margin-right: 6%;
+  padding: 2px;
   color:rgb(249, 53, 58);
   background-color: #d19898be;
   opacity: 0.6;
@@ -262,24 +261,33 @@ p:hover .showPrec{
 
 p{
   text-decoration: none;
-  position: relative;
   border-bottom: 1px solid rgb(202, 192, 192);
   width: 400px;
-  height: 25px;
+  display: flex;
   transition: all 0.5s;
-  padding-top: 10px;
+  align-items: center;
+  margin: 0;
+  padding: 10px 8px ;
+}
+p:nth-child(2n){
+  background-color: rgb(231, 231, 231);
+
 }
 #more{
-
   position: relative;
   bottom: 18%;
   left: 2%;
-
 }
 .menu{
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 200%;
+}
+
+@media only screen and (max-width : 1132){
+  p{
+    width: 100px;
+  }
 }
 
 

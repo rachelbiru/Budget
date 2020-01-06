@@ -7,29 +7,76 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
-<style>
-#showIncomes_valus{
-    width: 50%;
-    height: 60px;
-    background-color: aquamarine;
-}
-</style>
 
 <body>
-     <button onclick="clickhere()" >clickHere</button>
-    <input id="inputDescription" type="text">
-    <input type="number" name="" id="inputSumOfMoney">
+    <div id="alertMSG" class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Error!</strong> Worng Input, status code faild!
+    </div>
 
-    <div id="showIncomes_valus" >
+    <div id="UpperDiv">
+        <div id="ShowMonthAndYaer"></div>
 
+        <div id="more">
+            <a class="menu" href="index.html"><i class="fas fa-home"></i></a>
+            <a class="menu" href="history.html"><i class="fas fa-history"></i></a>
+        </div>
+
+        <div id="Showbalance">0.00</div>
+        <div id="ShowIncome">
+            <span class="incomeAndexpenses">INCOME</span>
+            <span id="spanShowINCOME">+ 0.00</span>
+
+        </div>
+
+        <div id="ShowExpenses">
+            <span class="incomeAndexpenses">EXPENSES</span>
+            <span id="spanShowExpenses"> - 0.00</span>
+            <div id="showPrecent1">
+                <div id="showPrecent">---</div>
+            </div>
+        </div>
     </div>
 
 
+    <div id="MiddleDiv">
+        <div id="middlediv2">
+            <select onclick="Changes_border_color_select()" name="" id="select">
+                <option id="" value="+">+</option>
+                <option value="-">-</option>
+            </select>
+            <input onclick="Changes_border_color_inputD()" id="inputDescription" type="text"
+                placeholder="Add deacription">
+            <input onclick="Changes_border_color_inputM()" type="number" name="" id="inputSumOfMoney"
+                placeholder="  Value">
+            <i id="checIcon" onclick="clickToEnter_incomes_or_outcomes()" class="far fa-check-circle"></i>
+        </div>
+    </div>
+
+    <div id="BottomDiv">
+        <div id="bottomleft">
+            <div id="INCOME">
+                <h2 id="income">INCOME</h2>
+                <div id="showIncomes_valus"></div>
+            </div>
+        </div>
+
+        <div id="bottomright">
+            <div id="EXPENSES">
+                <h2 id="outcome">Expenses</h2>
+                <div id="showOutcomes_valus"> </div>
+                <div id="showPrec"></div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="javaSrcript/javaScript.js"></script>
+    <script src="javaSrcript/App.js"></script>
+
+
 </body>
 
 </html>

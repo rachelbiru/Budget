@@ -1,35 +1,81 @@
 
-body{
-    background-color: darksalmon ;
 
+body{
+  margin: 0;
 }
 
-table {
-    border-collapse: collapse;
-    margin: auto;
-    font-size: 200%;
-    margin-top: 5%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  
-  table, td, th {
-    border: 1px solid black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#UpperDiv{
+  width: 100%;
+  height: 254px;
+  background-image: url("/image/19-39-46-back.png");
+  background-size: cover;
+}
+#MiddleDiv{
+  width: 100%;
+  height: 50px;
+  float: left;
+  background-color: rgb(240, 240, 240);
+}
+#BottomDiv{
+  margin: auto;
+  width: 80%;
+  height: 400px; 
+ }
+
+#bottomleft{
+  width: 32%;
+  height: 400px;
+  margin-left: 18%;
+  margin-top: 10%;
+}
+#bottomright{
+  width: 32%;
+  height: 352px;
+  float: right;
+  margin-right: 16%;
+  position: relative;
+  bottom: 100%;
+}
+
+#middlediv2{
+  width: 45%;
+  height: 50px;
+  margin: auto;
+}
+#ShowMonthAndYaer{
+  width: 30%;
+  height: 50px;
+  margin: auto;
+  font-size: 113%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-right: 31%;
+  padding-top: 1%;
+}
+
+.menu{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 200%;
+  position: relative;
+  bottom: 145px;
+  left: 27px;
 }
 
 h1{
-      /* margin-top: 5%; */
       text-align: center;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      color: rgb(139, 0, 104);
+      color: white;
+      margin: auto;
+      padding-top: 5%;
+      font-size: 200%;
   }
-  .menu{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 200%;
+
+  .color_for_income{
+    color: rgb(51, 169, 164);
   }
-  #more{
-    position: relative;
-    bottom: 10%;
-    left: 2%;
+  .color_for_outcome{
+    color:rgb(249, 53, 58);
   }
+
+i{color: white;}
